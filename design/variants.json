@@ -1,0 +1,7 @@
+{
+  "header": "header-classic",
+  "footer": "footer-classic",
+  "cart": "cart-drawer",
+  "upsell": "upsell-list",
+  "checkout": "checkout-steps"
+}
