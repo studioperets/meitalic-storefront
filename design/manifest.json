@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "name": "Meitalic — Metallic Graphite",
+  "generatedBy": "Claude Design",
+  "createdAt": "2026-09-14T12:00:55.043Z",
+  "pages": [
+    { "slug": "home", "title": "עמוד הבית", "file": "pages/home.html", "seoTitle": "Meitalic — קוסמצוטיקה מתקדמת", "seoDesc": "הגנה יומית, טיפול ממוקד וגימור טבעי. טיפוח נקי שמשלב מדע וטבע." },
+    { "slug": "story", "title": "הסיפור שלנו", "file": "pages/story.html", "seoTitle": "הסיפור שלנו — Meitalic", "seoDesc": "טיפוח שקט, שעובד. איך נולדה מיטאליק ומה מנחה אותנו." },
+    { "slug": "club-landing", "title": "מועדון Meitalic", "file": "pages/club-landing.html", "seoTitle": "מועדון Meitalic — נקודות והטבות", "seoDesc": "מועדון שמחזיר לך על כל שקל." },
+    { "slug": "partners-landing", "title": "תוכנית השותפות", "file": "pages/partners-landing.html", "seoTitle": "תוכנית השותפות — Meitalic", "seoDesc": "הרוויחו עמלה על כל המלצה." },
+    { "slug": "journal", "title": "המגזין", "file": "pages/journal.html", "seoTitle": "המגזין — Meitalic", "seoDesc": "מדריכים, טיפים ומדע העור בשפה פשוטה." },
+    { "slug": "skin-quiz", "title": "התאמה אישית", "file": "pages/skin-quiz.html", "seoTitle": "איזה מוצר מתאים לי? — Meitalic", "seoDesc": "ארבע שאלות קצרות והמלצה מדויקת." }
+  ],
+  "templates": [
+    { "key": "product", "file": "templates/product.html" },
+    { "key": "catalog", "file": "templates/catalog.html" },
+    { "key": "category", "file": "templates/category.html" }
+  ]
+}

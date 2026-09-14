@@ -1,0 +1,52 @@
+<section style="max-width:1180px;margin:0 auto;padding:28px 22px 90px;">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:start;">
+
+    <div style="position:relative;">
+      {{#if product.badge}}<span style="position:absolute;top:14px;inset-inline-start:14px;z-index:2;background:var(--ms-ink,#1B1B1D);color:#fff;font-size:11.5px;font-weight:600;letter-spacing:.08em;border-radius:999px;padding:6px 12px;">{{product.badge}}</span>{{/if}}
+      <div style="background:#fff;border:1px solid #E7E4DC;border-radius:18px;overflow:hidden;">{{product.gallery}}</div>
+      {{#if field.lifestyle_gallery}}
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px;">{{#each field.lifestyle_gallery}}<img src="{{url}}" alt="{{alt}}" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;">{{/each}}</div>
+      {{/if}}
+    </div>
+
+    <div>
+      <div style="font-size:11px;letter-spacing:.18em;color:#8A867D;">{{product.category}}</div>
+      <h1 style="margin:8px 0 0;font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1.15;">{{product.name}}</h1>
+      {{#if field.hero_claim}}<p style="margin:8px 0 0;font-size:15.5px;color:#5F5C55;">{{field.hero_claim}}</p>{{/if}}
+      <div style="display:flex;align-items:center;gap:10px;margin-top:12px;font-size:13px;color:#5F5C55;"><span style="color:var(--ms-ink,#1B1B1D);font-weight:600;">★ {{product.rating}}</span><span>{{product.reviews}} ביקורות</span><span>·</span><span>{{product.size}}</span></div>
+
+      <div style="margin-top:20px;"><div dir="ltr" style="display:flex;align-items:baseline;gap:10px;justify-content:flex-end;flex-direction:row-reverse;">
+  <span style="font-size:26px;font-weight:600;">₪{{product.price}}</span>
+  {{#if product.compareAt}}<span style="font-size:15px;color:#8A867D;text-decoration:line-through;">₪{{product.compareAt}}</span><span style="font-size:12px;font-weight:600;color:var(--ms-accent,#A6432F);background:#FBF0ED;border-radius:999px;padding:4px 10px;">חיסכון {{product.savePct}}%</span>{{/if}}
+</div></div>
+
+      {{#if product.lowStock}}<div style="margin-top:12px;display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ms-accent,#A6432F);font-weight:500;"><span style="width:7px;height:7px;border-radius:50%;background:var(--ms-accent,#A6432F);display:inline-block;"></span>נשארו אחרונים במלאי</div>{{/if}}
+      {{#if product.outOfStock}}<div style="margin-top:12px;font-size:12.5px;color:#8A867D;">אזל מהמלאי</div>{{/if}}
+
+      <div style="margin-top:22px;">{{product.variants}}</div>
+      <div style="margin-top:20px;">{{product.addToCart}}</div>
+
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;">
+        {{#each field.free_from}}<span style="font-size:11.5px;color:#5F5C55;background:#EDEAE3;border-radius:999px;padding:6px 12px;">ללא {{this}}</span>{{/each}}
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px;">
+        <div style="background:#fff;border:1px solid #E7E4DC;border-radius:18px;padding:12px;text-align:center;font-size:12px;color:#4A4740;">משלוח חינם מעל ₪599</div>
+        <div style="background:#fff;border:1px solid #E7E4DC;border-radius:18px;padding:12px;text-align:center;font-size:12px;color:#4A4740;">30 יום להחזרה</div>
+        <div style="background:#fff;border:1px solid #E7E4DC;border-radius:18px;padding:12px;text-align:center;font-size:12px;color:#4A4740;">נבדק דרמטולוגית</div>
+      </div>
+
+      {{#if field.clinical_claim}}<div style="margin-top:18px;background:#1B1B1D;color:#fff;border-radius:16px;padding:16px 18px;font-size:14px;line-height:1.6;">{{field.clinical_claim}}</div>{{/if}}
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:64px;">
+    {{#if field.benefits}}<div style="background:#fff;border:1px solid #E7E4DC;border-radius:18px;padding:24px;"><h2 style="font-size:18px;font-weight:600;">למה תאהבו</h2><ul style="margin:12px 0 0;padding:0;list-style:none;color:#4A4740;line-height:1.9;">{{#each field.benefits}}<li>✦ {{this}}</li>{{/each}}</ul></div>{{/if}}
+    {{#if field.ingredients}}<div style="background:#fff;border:1px solid #E7E4DC;border-radius:18px;padding:24px;"><h2 style="font-size:18px;font-weight:600;">רכיבים פעילים</h2><div style="margin-top:12px;color:#4A4740;line-height:1.8;">{{field.ingredients}}</div></div>{{/if}}
+    {{#if field.how_to_use}}<div style="background:#fff;border:1px solid #E7E4DC;border-radius:18px;padding:24px;"><h2 style="font-size:18px;font-weight:600;">איך משתמשים</h2><div style="margin-top:12px;color:#4A4740;line-height:1.8;">{{field.how_to_use}}</div></div>{{/if}}
+  </div>
+
+  {{#if field.skin_types}}<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;font-size:13px;color:#4A4740;"><span style="font-weight:600;">מתאים ל:</span><span>{{field.skin_types}}</span>{{#if field.texture}}<span>· מרקם {{field.texture}}</span>{{/if}}{{#if field.finish}}<span>· גימור {{field.finish}}</span>{{/if}}</div>{{/if}}
+
+  <div style="margin-top:56px;color:#4A4740;line-height:1.85;max-width:760px;">{{product.description}}</div>
+</section>

@@ -1,0 +1,12 @@
+[
+  { "key": "hero_claim", "label": "משפט פתיחה בעמוד המוצר", "type": "text", "group": "עמוד המוצר", "showOn": ["pdp"], "help": "שורה אחת מתחת לשם המוצר, למשל: SPF 50 רחב-טווח, ללא גימור לבן" },
+  { "key": "benefits", "label": "יתרונות (רשימה)", "type": "list", "group": "עמוד המוצר", "showOn": ["pdp"], "help": "3–6 נקודות קצרות" },
+  { "key": "ingredients", "label": "רכיבים פעילים", "type": "richtext", "group": "עמוד המוצר", "showOn": ["pdp"] },
+  { "key": "how_to_use", "label": "איך משתמשים", "type": "richtext", "group": "עמוד המוצר", "showOn": ["pdp"] },
+  { "key": "skin_types", "label": "מתאים לסוגי עור", "type": "select", "options": ["כל סוגי העור", "רגיל", "יבש", "שמן/מעורב", "רגיש", "עם נטייה לאקנה"], "group": "התאמה", "showOn": ["pdp"] },
+  { "key": "texture", "label": "מרקם", "type": "select", "options": ["קרם", "ג׳ל", "לושן", "סרום"], "group": "התאמה", "showOn": ["pdp"] },
+  { "key": "finish", "label": "גימור", "type": "select", "options": ["טבעי", "מאט", "זוהר", "שקוף"], "group": "התאמה", "showOn": ["pdp"] },
+  { "key": "free_from", "label": "ללא (רשימה)", "type": "list", "group": "עמוד המוצר", "showOn": ["pdp"], "help": "למשל: אוקסיבנזון, פרבנים, בישום" },
+  { "key": "lifestyle_gallery", "label": "גלריית לייף-סטייל / לפני-אחרי", "type": "gallery", "group": "מדיה", "showOn": ["pdp"] },
+  { "key": "clinical_claim", "label": "נתון קליני (אופציונלי)", "type": "text", "group": "עמוד המוצר", "showOn": ["pdp"], "help": "למשל: 94% דיווחו על עור רגוע יותר תוך שבוע" }
+]

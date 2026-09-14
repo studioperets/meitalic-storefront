@@ -1,0 +1,16 @@
+<section style="max-width:1180px;margin:0 auto;padding:44px 22px 90px;">
+  <div style="font-size:11px;letter-spacing:.18em;color:#8A867D;"><a href="/shop" style="color:inherit;text-decoration:none;">החנות</a> · קטגוריה</div>
+  <h1 style="margin:8px 0 0;font-size:34px;font-weight:600;letter-spacing:-.02em;">{{category.name}}</h1>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px;margin-top:32px;">
+    {{#each products}}<a href="{{url}}" style="background:#fff;border:1px solid #E7E4DC;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:inherit;">
+  <div style="position:relative;aspect-ratio:4/5;background:#F3F1ED;">
+    {{#if badge}}<span style="position:absolute;top:12px;inset-inline-start:12px;background:var(--ms-ink,#1B1B1D);color:#fff;font-size:11px;font-weight:600;letter-spacing:.08em;border-radius:999px;padding:5px 11px;">{{badge}}</span>{{/if}}
+    <img src="{{image}}" alt="{{name}}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+  </div>
+  <div style="padding:16px 18px 20px;">
+    <div style="font-size:15px;font-weight:600;line-height:1.3;">{{name}}</div>
+    <div dir="ltr" style="display:flex;align-items:baseline;gap:8px;justify-content:flex-end;flex-direction:row-reverse;margin-top:8px;"><span style="font-size:16px;font-weight:600;">₪{{price}}</span>{{#if compareAt}}<span style="font-size:13px;color:#8A867D;text-decoration:line-through;">₪{{compareAt}}</span>{{/if}}</div>
+  </div>
+</a>{{/each}}
+  </div>
+</section>
